@@ -11,7 +11,7 @@ metadata:
     nirmata.io/application.name: "hello-world"
     nirmata.io/component: "helloworld"
 spec:
-  replicas: 2
+  replicas: 1
   revisionHistoryLimit: 5
   selector:
     matchLabels:
@@ -40,7 +40,7 @@ spec:
       nodeSelector: {}
       containers:
       - name: "helloworld"
-        image: "nirmata/hello-world:latest"
+        image: "nirmata/hello-world:1.7"
         command: []
         args: []
         ports:
